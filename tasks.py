@@ -14,6 +14,7 @@ def fizzbuzz(n):
         return "Buzz"
     else:
         return f'{n}'
+    """что0то"""
     """Вернуть "FizzBuzz", если n делится на 3 и на 5, "Fizz" — только на 3,
     "Buzz" — только на 5, иначе само число строкой.
 
