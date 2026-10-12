@@ -4,7 +4,6 @@
 # Проверить, что файл запускается без ошибок: python3 tasks.py
 
 
-
 def fizzbuzz(n):
     """Вернуть "FizzBuzz", если n делится на 3 и на 5, "Fizz" — только на 3,
     "Buzz" — только на 5, иначе само число строкой.
@@ -16,7 +15,15 @@ def fizzbuzz(n):
         fizzbuzz(7) -> "7"
     """
     # Реализовал(а): ...
-    raise NotImplementedError
+    return (
+        "FizzBuzz"
+        if n % 3 == 0 and n % 5 == 0
+        else "Fizz"
+        if n % 3 == 0
+        else "Buzz"
+        if n % 5 == 0
+        else str(n)
+    )
 
 
 def is_prime(n):
